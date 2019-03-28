@@ -8,15 +8,15 @@ console.log('SOAL 2\n=======\n', soal2())
 // let change = asd.replace(/\n/g, " ")
 // console.log(change)
 
-const noPassword = ({ password, ...rest }) => rest
-const user = {
-  id: 100,
-  name: 'Howard Moon',
-  password: 'Password!'
-}
+// const noPassword = ({ password, ...rest }) => rest
+// const user = {
+//   id: 100,
+//   name: 'Howard Moon',
+//   password: 'Password!'
+// }
 
 //=> { id: 100, name: 'Howard moon' }
-console.log(noPassword(user))
+// console.log(noPassword(user))
 
 // // let x = {a: 1, b: 2, c: 3, z:26};
 // // let {b, ...y} = x;
