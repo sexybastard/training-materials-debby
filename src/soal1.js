@@ -69,3 +69,11 @@ const soal1 = () => {
 }
 
 export { soal1 }
+
+// "start": "babel-node --presets es2015 src/index.js",
+
+// "babel": {
+//   "presets": [
+//     "es2015"
+//   ]
+// },
