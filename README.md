@@ -1,4 +1,4 @@
-### Enviroment has been set to be able to compile es2015
+## Enviroment has been set to be able to compile es2015
 
 ### Step to initialize
 
@@ -19,7 +19,7 @@ npm install nodemon --save-dev
 npm install @babel/core @babel/node --save-dev
 
 
-# add this line into package.json scripts
+#### add this line into package.json scripts
 
 "start": "nodemon --exec babel-node src/index.js"
 
@@ -28,11 +28,7 @@ npm install @babel/preset-env --save-dev
 
 touch .babelrc
 {
-
   "presets": [
-
     "@babel/preset-env"
-
   ]
-  
 }
