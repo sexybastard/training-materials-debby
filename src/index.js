@@ -1,6 +1,7 @@
 import { soal1 } from './soal1'
 import { soal2 } from './soal2'
 import chalk from 'chalk'
+import secretText from './secretText'
 
 const log = console.log
 
@@ -10,7 +11,7 @@ const executeSoal1 = () => {
   const treshold = 4
   const result = soal1(input, treshold)
 
-  log(chalk.bgRed.black.bold.dim(' SOAL 1 '))
+  log(chalk.bgRed.black('\n SOAL 1 '))
   log(chalk.yellow('Array: ', input))
   log(chalk.yellow('Treshold: ', treshold))
   log(chalk.white('Result: ', result))
@@ -21,10 +22,11 @@ const executeSoal2 = () => {
   const input = [ 40, 40, 30, 40, 20, 50 ]
   const result = soal2(input)
 
-  log(chalk.bgRed.black.bold.dim(' SOAL 2 '))
+  log(chalk.bgRed.black('\n SOAL 2 '))
   log(chalk.yellow('Array: ', input))
   log(chalk.white('Result: ', result))
 }
 
+log(secretText)
 executeSoal1()
 executeSoal2()
