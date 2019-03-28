@@ -51,6 +51,9 @@ const minStepNewMeta = (arr, treshold) => {
       if(skipCount === 2){
 
       }
+      else{
+        skipCount++
+      }
     }
   }
 
