@@ -1,32 +1,30 @@
 import { soal1 } from './soal1'
 import { soal2 } from './soal2'
+import chalk from 'chalk'
 
-console.log('SOAL 1\n=======\n', soal1())
-console.log('SOAL 2\n=======\n', soal2())
+const log = console.log
 
-// let asd = 'aaaa\nbbbbb\nccccc'
-// let change = asd.replace(/\n/g, " ")
-// console.log(change)
+const executeSoal1 = () => {
+  // const input = [ 1, 2, 3, 5, 4 ]
+  const input = [ 5, 6, 1, 2, 3 ]
+  const treshold = 4
+  const result = soal1(input, treshold)
 
-// const noPassword = ({ password, ...rest }) => rest
-// const user = {
-//   id: 100,
-//   name: 'Howard Moon',
-//   password: 'Password!'
-// }
+  log(chalk.bgRed.black.bold.dim(' SOAL 1 '))
+  log(chalk.yellow('Array: ', input))
+  log(chalk.yellow('Treshold: ', treshold))
+  log(chalk.white('Result: ', result))
+}
 
-//=> { id: 100, name: 'Howard moon' }
-// console.log(noPassword(user))
+const executeSoal2 = () => {
+  // const input = [ 7, 5, 5, 5, 4, 4, 4, 3, 2, 2 ]
+  const input = [ 40, 40, 30, 40, 20, 50 ]
+  const result = soal2(input)
 
-// // let x = {a: 1, b: 2, c: 3, z:26};
-// // let {b, ...y} = x;
-// // console.log(x)
+  log(chalk.bgRed.black.bold.dim(' SOAL 2 '))
+  log(chalk.yellow('Array: ', input))
+  log(chalk.white('Result: ', result))
+}
 
-// let a = {
-//   a: 1, b: 2, c: 3
-// }
-// let x = {
-//   d: 4, e: 5
-// }
-// let b = { ...a, ...x }
-// console.log(b)
+executeSoal1()
+executeSoal2()

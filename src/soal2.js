@@ -74,11 +74,6 @@ const minStep = (arr) => {
   return stepDown(arr, levels, levels[0], levels[1], 0)
 }
 
-const soal2 = () => {
-  const input = [ 40, 40, 30, 40, 20, 50 ]
-  // const input = [ 7, 5, 5, 5, 4, 4, 4, 3, 2, 2 ]
-  const output = minStep(input)
-  return 'For input ' + input + '\n the minimum step is ' + output
-}
+const soal2 = (input) => minStep(input)
 
 export { soal2 }

@@ -14,12 +14,10 @@ const minStep = (arr, treshold) => {
     if(arr[i] < min){
       min = arr[i]
       count++
-      console.log(arr[i])
       skipCount = 0
     }
     else if(skipCount === 2){
       count++
-      console.log(arr[i])
       skipCount = 0
       if(arr[i] > max)
         max = arr[i]
@@ -60,20 +58,6 @@ const minStepNewMeta = (arr, treshold) => {
   return count
 }
 
-const soal1 = () => {
-  // const input = [ 1, 2, 3, 5, 4 ]
-  const input = [ 5, 6, 1, 2, 3 ]
-  const treshold = 4
-  const output = minStep(input, treshold)
-  return 'For input ' + input + '\n the minimum step is ' + output
-}
+const soal1 = (input, treshold) => minStep(input, treshold)
 
 export { soal1 }
-
-// "start": "babel-node --presets es2015 src/index.js",
-
-// "babel": {
-//   "presets": [
-//     "es2015"
-//   ]
-// },
