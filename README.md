@@ -32,3 +32,5 @@ touch .babelrc
     "@babel/preset-env"
   ]
 }
+
+Supporting document: https://www.robinwieruch.de/minimal-node-js-babel-setup/
