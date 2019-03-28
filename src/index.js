@@ -1,8 +1,7 @@
 import { soal1 } from './soal1'
 import { soal2 } from './soal2'
 import chalk from 'chalk'
-import secretText from './secretAsFuck/secretText'
-import secretAnimatedText from './secretAsFuck/secretAnimatedText'
+import secretText from './secretText'
 
 const log = console.log
 
@@ -29,8 +28,5 @@ const executeSoal2 = () => {
 }
 
 log(secretText)
-
 executeSoal1()
 executeSoal2()
-
-
